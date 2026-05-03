@@ -1,0 +1,59 @@
+{
+  "name": "BlogPost",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Blog post title"
+    },
+    "slug": {
+      "type": "string",
+      "description": "URL-friendly slug"
+    },
+    "excerpt": {
+      "type": "string",
+      "description": "Short excerpt for previews"
+    },
+    "content": {
+      "type": "string",
+      "description": "Full blog post content in markdown"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "accounting",
+        "taxation",
+        "payroll",
+        "business_tips",
+        "industry_insights",
+        "compliance",
+        "technology"
+      ],
+      "description": "Blog category"
+    },
+    "cover_image": {
+      "type": "string",
+      "description": "Cover image URL"
+    },
+    "author": {
+      "type": "string",
+      "description": "Author name"
+    },
+    "published": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether the post is published"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Tags for the post"
+    }
+  },
+  "required": [
+    "title",
+    "content"
+  ]
+}

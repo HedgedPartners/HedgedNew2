@@ -1,0 +1,84 @@
+{
+  "name": "Lead",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string",
+      "description": "Full name of the lead"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "Email address"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Phone number"
+    },
+    "company": {
+      "type": "string",
+      "description": "Company or business name"
+    },
+    "industry": {
+      "type": "string",
+      "enum": [
+        "legal",
+        "medical",
+        "construction",
+        "retail",
+        "restaurant_hospitality",
+        "schools",
+        "non_profit",
+        "it_business",
+        "other"
+      ],
+      "description": "Industry of the lead"
+    },
+    "service_interest": {
+      "type": "string",
+      "enum": [
+        "accounting",
+        "taxation",
+        "payroll",
+        "secretarial",
+        "process_optimization",
+        "business_analytics",
+        "multiple"
+      ],
+      "description": "Service the lead is interested in"
+    },
+    "package_interest": {
+      "type": "string",
+      "enum": [
+        "starter",
+        "professional",
+        "enterprise"
+      ],
+      "description": "Package tier interest"
+    },
+    "message": {
+      "type": "string",
+      "description": "Additional message or details"
+    },
+    "source_page": {
+      "type": "string",
+      "description": "Which page the lead came from"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "contacted",
+        "qualified",
+        "converted",
+        "lost"
+      ],
+      "default": "new",
+      "description": "Lead status"
+    }
+  },
+  "required": [
+    "full_name",
+    "email"
+  ]
+}
