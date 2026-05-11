@@ -44,7 +44,7 @@ export default function Footer() {
                 <Phone className="w-4 h-4 text-primary" /> +27 84 846 9591
               </a>
               <div className="flex items-start gap-3 text-sm text-background/60">
-                <MapPin className="w-4 h-4 text-primary mt-0.5" /> 58 Columbia Road, Clubview, Centurion
+                <MapPin className="w-4 h-4 text-primary mt-0.5" /> Lourgadia Building, 1262 Embankment Road, Centurion
               </div>
               <div className="flex items-center gap-3 text-sm text-background/60">
                 <Clock className="w-4 h-4 text-primary" /> Mon–Fri: 08:00–17:00
