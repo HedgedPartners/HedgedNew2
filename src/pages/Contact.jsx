@@ -7,7 +7,7 @@ import LeadCaptureForm from '@/components/shared/LeadCaptureForm';
 const contactInfo = [
   { icon: Mail, label: 'Email', value: 'info@hedged.co.za', link: 'mailto:info@hedged.co.za' },
   { icon: Phone, label: 'Phone', value: '+27 84 846 9591', link: 'tel:+27848469591' },
-  { icon: MapPin, label: 'Address', value: '58 Columbia Road, Clubview Forum, Centurion, South Africa', link: null },
+  { icon: MapPin, label: 'Address', value: 'Lourgadia Building, 1262 Embankment Road, Centurion, South Africa', link: null },
   { icon: Clock, label: 'Office Hours', value: 'Mon–Fri: 08:00–17:00', link: null },
 ];
 
