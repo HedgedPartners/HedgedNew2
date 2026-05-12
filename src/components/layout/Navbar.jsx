@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion, AnimatePresence } from 'framer-motion';
-import logo from '@/assets/logo.webp';
+import logo from '@/assets/Logo.webp';
 
 const industries = [
   { name: 'Legal Services', path: '/industries/legal' },
