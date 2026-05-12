@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from '@/assets/logo.webp';
 
 const industries = [
   { name: 'Legal Services', path: '/industries/legal' },
@@ -46,10 +47,13 @@ export default function Navbar() {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-background/95 backdrop-blur-md shadow-lg border-b border-border' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Link to="/" className="flex items-center gap-1">
-            <span className="text-2xl font-bold tracking-wider text-foreground">HEDG</span>
-            <span className="text-2xl font-bold tracking-wider text-primary">ED</span>
-          </Link>
+          <Link to="/" className="flex items-center">
+  <img 
+    src={logo}
+    alt="Hedged Logo" 
+    className="h-10 w-auto"
+  />
+</Link>
 
           {/* Desktop Nav */}
           <div className="hidden lg:flex items-center gap-1">
